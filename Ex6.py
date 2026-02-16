@@ -1,5 +1,5 @@
-# import sys
-# sys.setrecursionlimit(1500)
+import sys
+sys.setrecursionlimit(1500)
 
 
 def silnia(n):
@@ -13,9 +13,8 @@ def silniaFor(n):
     for i in range(1, n):
         n = n * i
     return n
-    
 
-o = 10
+o = 1
 
 print(silniaFor(o), "With for")
 print("------------")
