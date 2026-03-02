@@ -22,9 +22,26 @@ def selection_sort(list):
         list[i], list[min_index] = list[min_index], list[i]
     return list
 
+def insertion_sort(list):
+    n = len(list)
+    for i in range(1, n):
+        key = list[i]
+        j = i - 1
+        while j >= 0 and list[j] > key:
+            list[j + 1] = list[j]
+            j -= 1
+        list[j + 1] = key
+    return list
 
-list = [random.randint(1,1000) for _ in range(10)]
 
+
+
+
+
+list = [random.randint(1,1000) for _ in range(100)]
+
+
+print(insertion_sort(list))
 
 start_time = time.time_ns()
 
